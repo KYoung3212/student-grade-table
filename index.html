@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="input-group" id="adv-search">
-                                <input type="text" id = "mySearch" class="form-control" placeholder="Search for students" />
+                                <input type="text" id = "mySearch" class="form-control" placeholder="Search" />
                                 <div class="input-group-btn">
                                     <div class="btn-group" role="group">
                                         <div class="dropdown dropdown-lg">
@@ -112,7 +112,7 @@
 <!-- End of Search Bar HTML -->
 <div class="container">
 
-        <div class="table-responsive table-hover page-header">
+        <div class="table-responsive table-hover page-header" style= 'border-top: none; border-left: none; border-right: none'>
             <!-- only show this element when the isnt on mobile -->
             <h1 class="visible-md visible-lg">Student Grade Table
                     <!-- <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search for names.."> -->
@@ -137,12 +137,12 @@
         </div>
         <div class="student-add-form col-md-3 pull-right">
             <h4>Add Student</h4>
-        <form data-toggle="validator" role="form">
+        <form data-toggle="validator" role="form" id="submitForm">
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-user "></span>
                 </span>
-                <input type="text" class="form-control studentName" name="studentName" id="studentName" placeholder="Student Name" pattern="^[a-z ,.'-]+$" data-error="Please enter a valid name"  required>
+                <input type="text" class="form-control studentName" name="studentName" id="studentName" placeholder="Student Name" pattern="^[a-zA-Z ,.'-]+$" data-error="&nbsp;&nbsp;Please enter a valid name"  required>
                 <div class="help-block with-errors"></div>
             </div>
             
@@ -150,7 +150,7 @@
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-modal-window"></span>
                 </span>
-                <input type="text" class="form-control course" name="course" id="course" placeholder="Student Course" data-error="Please enter a valid course" required>
+                <input type="text" class="form-control course" name="course" id="course" placeholder="Student Course" data-error="&nbsp;&nbsp;Please enter a valid course" required>
                 <div class="help-block with-errors"></div>
 
             </div>
@@ -158,16 +158,18 @@
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-education"></span>
                 </span>
-                <input type="text" class="form-control grade" name="studentGrade" id="studentGrade" placeholder="Student Grade" maxlength="3" pattern="^[1-9]?[0-9]{1}$|^100$" data-error="Please enter a valid grade" required>
+                <input type="text" class="form-control grade" name="studentGrade" id="studentGrade" placeholder="Student Grade" maxlength="3" pattern="^[1-9]?[0-9]{1}$|^100$" data-error="&nbsp;&nbsp;Please enter a valid grade" required>
                 <div class="help-block with-errors"></div>
 
             </div>
-            <button type="button" class="small-btn btn btn-success addButton ">
+        <span class="form-group">
+            <button type="submit" class="small-btn btn btn-success addButton ">
                  Add
             </button>
+        </span>
             <button type="button" class="small-btn btn btn-default cancel" onclick="">Cancel</button>
-            <div>
-                <button type="button" class="small-btn btn btn-warning serverData" onclick=""><i class="fa fa-spinner fa-spin"></i> Get Data From Server</button>
+            <div style="padding-top: 5px; padding-bottom: 5px">
+                <button type="button" class="small-btn btn btn-warning serverData" onclick=""><i class="fa fa-spinner fa-spin"></i> Refresh</button>
             </div>
         </div>
     </form>
@@ -179,7 +181,7 @@
                         <th>Student Name</th>
                         <th>Student Course</th>
                         <th>Student Grade</th>
-                        <th>Operations</th>
+                        <th class = "col-md-2">Operations</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -270,7 +272,7 @@
                                     <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-user "></span>
                                     </span>
-                                    <input type="text" class="form-control studentName" name="studentName" id="editName" placeholder="Student Name" pattern="^[a-z ,.'-]+$" data-error="Please enter a valid name"  required>
+                                    <input type="text" class="form-control studentName" name="studentName" id="editName" placeholder="Student Name" pattern="^[a-zA-Z ,.'-]+$" data-error="&nbsp;&nbsp;Please enter a valid name"  required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 
@@ -278,7 +280,7 @@
                                     <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-modal-window"></span>
                                     </span>
-                                    <input type="text" class="form-control course" name="course" id="editCourse" placeholder="Student Course" data-error="Please enter a valid course" required>
+                                    <input type="text" class="form-control course" name="course" id="editCourse" placeholder="Student Course" data-error="&nbsp;&nbsp;Please enter a valid course" required>
                                     <div class="help-block with-errors"></div>
                     
                                 </div>
@@ -286,7 +288,7 @@
                                     <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-education"></span>
                                     </span>
-                                    <input type="text" class="form-control grade" name="studentGrade" id="editGrade" placeholder="Student Grade" maxlength="3" pattern="^[1-9]?[0-9]{1}$|^100$" data-error="Please enter a valid grade" required>
+                                    <input type="text" class="form-control grade" name="studentGrade" id="editGrade" placeholder="Student Grade" maxlength="3" pattern="^[1-9]?[0-9]{1}$|^100$" data-error="&nbsp;&nbsp;Please enter a valid grade" required>
                                     <div class="help-block with-errors"></div>
                     
                                 </div>
