@@ -1,4 +1,4 @@
-# STUDENT GRADE TABLE
+# Student Grade Table
 
 The Student Grade Table (SGT) is a web/mobile application that allows users to manage students and their respective grades utiliizng a CRUD (Create, Read, Update, Delete) approach. SGT uses Bootstrap 4 for a modern design, data validation, and mobile responsiveness.  JavaScript is used for front-end functionality, PHP 7 for back-end APIs, and MySQL for database storage.
 
