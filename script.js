@@ -70,9 +70,9 @@ function addStudent() {
 
     studentArray.push(studentObj);
     console.log(studentArray);
-    clearAddStudentFormInputs();
     updateStudentList();
     sendToServer(studentObj);
+    clearAddStudentFormInputs();
 }
 
 
@@ -85,13 +85,14 @@ function clearAddStudentFormInputs() {
     // $('#submitForm').find('.error').removeClass('error');
 
 
-    // $('#submitForm').bootstrapValidator('resetForm', true);
     // $('#submitForm').data('formValidation').resetForm();
     // $('#submitForm').validator('validate');
 
     $('input:text').val('');
-    setTimeout(function(){  $(".has-error").removeClass("has-error");
-    $(".help-block li").empty(); }, 0.1);
+    $('#submitForm').bootstrapValidator('resetForm', true);
+
+    // setTimeout(function(){  $(".has-error").removeClass("has-error");
+    // $(".help-block li").empty(); }, 0.1);
 
    
 
