@@ -29,4 +29,4 @@ I have always been a person to continutally want to improve any of my projects s
 
    [live demo]: <https://kevin-young.us/SGT/>
    [email]: <http://kevin.young3212@gmail.com>
-   [my portfolio]: <https://kevin-young.us>
+   [portfolio]: <https://kevin-young.us>
