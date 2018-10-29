@@ -1,60 +1,32 @@
-# Version 0.1
+# STUDENT GRADE TABLE
 
-Version 0.1 is the starting point of the Student Grade Table Project. LearningFuze has provided a base structure that
-includes HTML structure that will need to be updated with boostrap classes. For this version we are looking to see that you
-understand how to style an application with bootstrap, take input values and apply them to objects, and update the DOM
-with a visual of those objects stored.
+The Student Grade Table (SGT) is a web/mobile application that allows users to manage students and their respective grades utiliizng a CRUD (Create, Read, Update, Delete) approach. SGT uses Bootstrap 4 for a modern design, data validation, and mobile responsiveness.  JavaScript is used for front-end functionality, PHP 7 for back-end APIs, and MySQL for database storage.
 
+You can test it on my [live demo]. 
 
+## Features
 
-## Getting Started
-> - Are you on your master branch?
-    - **Yes** - continue to "Pull Latest Changes"
-    - **I dont know** Run the command below
-        - `git branch` - this will highlight the branch you are currently on
-    - **No** - Make sure you `git add .` and `git commit` to your current branch before you switch to your master branch
-> - Pull Latest Changes
-        - `git checkout master`
-        - `git pull origin master` - **Now continue with the next steps**
-> - Create a feature branch
-    - `git checkout -b v0.1`
-> - Work on the scope defined <a href="https://github.com/Learning-Fuze/SGT/tree/v.1#scope">Below</a>
-> - Add files to git
-    - `git add .`
-> - Commit files (Group files together)
-    - `git commit -m "SGT v0.1 - Your Name"`
-    - **Replace "Your Name" with your first and last name**
-> - Send to gitHub (Push)
-    - `git push origin v0.1`
-> - Create pull request
-    - Pull request should be made from v0.1 to **your repository's/teams** master branch
+  - Create new students, read the data of about a thousand entries, update any student's name, course name, and/or grade, and delete any entry
+  - Responsive design allows for ease of usage from both desktop and mobile access
+  - Data Validation to make sure the user enters a valid input to add to be stored in to the student grade table. This also proteects against any injection that a user may try to implement to the SGT database.
+  - Find students, courses, and class grade with the search function which includes the ability to search for multiple terms
+
+## Planned Features
+  - Multiple number of pages, with 20-30 entries per page to keep larger lists more organized.
+  - Login system for both teachers and students. Teachers will be able to create, read, update, and delete respective assigned students. Students will only be able to read their own respective entries similar to a report card.
+  - Different styled themes for the user to customize to their liking.
+
+## Personal Insight
+> The Student Grade Table is a personal achievement of mine because it was my first fully-functional project that utilizes both the front and back end.  By building the SGT from scratch, I was able to fully embrace how the front and back end are connected, finding ways to increase speed, efficeincy, and functionality. 
+
+> At first, the Student Grade Table was meant broaden my understading of API interaction. Soon after, I learned how to create and migrate my own external API and database.
+
+> After fully implementing my own database, I added more features to create a better user experience. Some of these included a search bar, utilizing PHP calls to filter results, data validation, to keep consistent data entry management, and an update feature, to allow a user to customize any entries of their choice.
 
 
-## Scope
-> - Styling
-    - Apply bootstrap styling to all <a href="http://getbootstrap.com/css/#buttons">buttons</a> & <a href="http://getbootstrap.com/css/#forms" target="_blank">form elements</a>
-    - Apply bootstrap <a href="http://getbootstrap.com/css/#tables" target="_blank">table styling</a>
-    - Apply look using boostrap only based on the designs <a href="https://github.com/ej020586/SGT/tree/v.1#design">below</a>. <b>Please note that no additional style sheets have been added</b>
-- JS Functionality
-    - Build out all functions & variables based on jsDoc (<a href="https://en.wikipedia.org/wiki/JSDoc" target="_blank">What is this?</a>) comments inside the script.js file
-    - Form
-        - On click of add button
-            - call appropriate function in on click attribute
-            - Add values inside the form into an object and store that object in the student_array global variable
-            - Display all student data stored in the student_array inside the bootstrap table structure
-            - Clear values inside the form elements
-        - On click of cancel button
-            - Clear values inside the form elements
-    - on Dom Load
-        - Reset application to its default state
-        - Display all student data stored in the student_array inside the bootstrap table structure
-    - on update of student_array data, calculate and show average student grade rounded to the nearest whole number and display inside .avgGrade element
+## Contributions
+I have always been a person to continutally want to improve any of my projects since there is always room for improvement.  If you would like to contribute please reach out via [email] or you can reach me directly at my [portfolio]. Thanks!
 
-## Design
-> #### Mobile appearance
-<img src="https://cloud.githubusercontent.com/assets/10343746/9148427/0384d076-3d30-11e5-83ff-4d10ae2daf70.png" width="200"/>
-#### No Data available appearance
-<img src="https://cloud.githubusercontent.com/assets/10343746/9148435/1d8f2bc4-3d30-11e5-926d-72a2a086fd8b.png" width="500"/>
-#### Data available appearance
-<img src="https://cloud.githubusercontent.com/assets/10343746/9148437/22e2566e-3d30-11e5-9401-ba2cb8309d65.png" width="500"/>
-
+   [live demo]: <https://kevin-young.us/SGT/>
+   [email]: <http://kevin.young3212@gmail.com>
+   [my portfolio]: <https://kevin-young.us>
