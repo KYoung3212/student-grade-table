@@ -70,9 +70,9 @@ function addStudent() {
 
     studentArray.push(studentObj);
     console.log(studentArray);
-    clearAddStudentFormInputs();
     updateStudentList();
     sendToServer(studentObj);
+    clearAddStudentFormInputs();
 }
 
 
@@ -85,13 +85,14 @@ function clearAddStudentFormInputs() {
     // $('#submitForm').find('.error').removeClass('error');
 
 
-    // $('#submitForm').bootstrapValidator('resetForm', true);
     // $('#submitForm').data('formValidation').resetForm();
     // $('#submitForm').validator('validate');
 
     $('input:text').val('');
-    setTimeout(function(){  $(".has-error").removeClass("has-error");
-    $(".help-block li").empty(); }, 0.1);
+    $('#submitForm').bootstrapValidator('resetForm', true);
+
+    // setTimeout(function(){  $(".has-error").removeClass("has-error");
+    // $(".help-block li").empty(); }, 0.1);
 
    
 
@@ -150,7 +151,14 @@ function renderStudentOnDom(studentObj) {
         });
         console.log(this);
         var studentID = $(this).attr('id');
-        var studentName = $(this).attr('studentName')
+        var studentName = $(this).parent().parent().find('td')[0].textContent;
+        console.log('st:', studentName[1]);
+        var course = $(this).parent().parent().find('td')[1].textContent;
+        var grade = $(this).parent().parent().find('td')[2].textContent;
+
+        $('#editName').val(studentName);
+        $('#editCourse').val(course);
+        $('#editGrade').val(grade);
         $('#editModalHeader').text(`Student to Change: ${studentObj.name}`);
         $('#idHolder').text(studentID);
         $('#saveChanges').off();
