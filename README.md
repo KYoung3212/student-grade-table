@@ -4,6 +4,11 @@ The Student Grade Table (SGT) is a web/mobile application that allows users to m
 
 You can test it on my [live demo]. 
 
+## Screenshots
+<img src="https://github.com/KYoung3212/portfolio/blob/master/img/slides/SGT-0.jpg" width="320">
+<img src="https://github.com/KYoung3212/portfolio/blob/master/img/slides/SGT-1.jpg" width="320">
+<img src="https://github.com/KYoung3212/portfolio/blob/master/img/slides/SGT-2.jpg" width="320">
+
 ## Features
 
   - Create new students, read the data of about a thousand entries, update any student's name, course name, and/or grade, and delete any entry
@@ -25,7 +30,7 @@ You can test it on my [live demo].
 
 
 ## Contributions
-I have always been a person to continutally want to improve any of my projects since there is always room for improvement.  If you would like to contribute please reach out via [email] or you can reach me directly at my [portfolio]. Thanks!
+I have always been a person to continutally want to improve any of my projects since there is always room for improvement.  If you would like to contribute please reach out via [email]: kevin.young3212@gmail.com or you can reach me directly at my [portfolio]. Thanks!
 
    [live demo]: <https://kevin-young.us/SGT/>
    [email]: <http://kevin.young3212@gmail.com>
