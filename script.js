@@ -89,7 +89,9 @@ function clearAddStudentFormInputs() {
     // $('#submitForm').validator('validate');
 
     $('input:text').val('');
-    $('#submitForm').bootstrapValidator('resetForm', true);
+    // $('#submitForm').bootstrapValidator('resetForm', true);
+    $("#submitForm").validator("destroy")
+
 
     // setTimeout(function(){  $(".has-error").removeClass("has-error");
     // $(".help-block li").empty(); }, 0.1);
